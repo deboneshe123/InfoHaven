@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8eaed;
+}
+
+.header-container {
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+header {
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+header h1 {
+    font-size: 36px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    background: linear-gradient(135deg, #4B0082, #FF1493); /* Gradient text color */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Hide the original text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
+    margin: 0; /* Remove default margin */
+}
+
+header h1 span {
+    padding-bottom:8%;
+    font-size: 45px; /* Increase font size for specific letters */
+}
+
+.logo-left{
+    padding-left:8%;
+    flex-grow: 1;
+    text-align:left;
+}
+.logo-center{
+    padding-right: 25%;
+    flex-grow:1;
+    text-align: center;
+}
+
+
+.content {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    padding: 10px 20px;
+    border: 2px solid #333; /* Border color */
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.3s ease; /* Transition effect */
+}
+
+.content a:hover {
+    background-color: #333; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    background-image: linear-gradient(to right, yellow, pink);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: purple;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+nav ul li:hover > .dropdown-content {
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+    5px 10px
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+
+.main-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.vision-mission {
+    position: relative;
+    animation: moveRightLeft 40s linear infinite;
+}
+.slider img {
+     width:100%;
+     height:550px;
+}
+
+@keyframes moveRightLeft {
+    0% { left: 100%; }
+    100% { left: -90%; }
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    color: black; 
+    display: flex;
+    max-width: 80%;
+    height: 220vh;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 9px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+
+
+.container main section h2 {
+    font-size: 24px; /* Font size for section headings */
+    color: #4B0082; /* Heading color */
+    text-align: center; /* Center align headings */
+    margin-bottom: 10px; /* Add margin below headings */
+    text-transform: uppercase; /* Convert text to uppercase */
+    margin-top: 0px;
+}
+
+.container main section p {
+    font-size: 15px; /* Font size for paragraph text */
+    color: #333; /* Paragraph text color */
+    line-height: 1.6; /* Line height for better readability */
+     margin-top: 0;
+}
+.container main section:first-of-type {
+    margin-top: 20px; /* Add top margin for the first section */
+}
+
+
+article {
+    text-align: justify;
+}
+
+.menu {
+  float: right;
+  width: 20%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 0px;
+}
+
+.menu a {
+  background: linear-gradient(135deg, #FF69B4, #800080); /* Gradient background */
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 90%;
+  color: #fff; /* Text color */
+  text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px; /* Adjust width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px; /* Add some space between parent menu item and sub-dropdown */
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 8px 12px; /* Adjust padding as needed */
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position sub-dropdowns to the right of parent menu item */
+    display: none;
+    z-index: 1;
+    background-color: white;
+}
+
+
+
+.dropdown-content:hover .sub-dropdown {
+    display: block; /* Display sub-dropdown on hover of parent dropdown */
+}
+
+.main-section gallery{
+    margin: auto;
+    background-color: white;
+    color: black; 
+    display: flex;
+    max-width: 80%;
+    height: 160vh;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 9px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.gallery img {
+     width: 24%;
+}
+
+footer {
+    background-image: linear-gradient(to right, yellow, pink);
+    color: purple;
+    text-align: center;
+    padding: 10px;
+}
